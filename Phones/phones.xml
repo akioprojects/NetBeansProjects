@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE phones SYSTEM "phones.dtd">
+<phones>
+	<phone type="Pre-pay" freeCallCredit="20" currency="Euro">
+		<number>085-123456</number>
+		<provider name="Meteor" />
+		<sold profit = "yes"/>
+		<maker location="Sweden">Nokia</maker>
+	</phone>
+	<phone type="Bill-pay">
+		<number>086-654321</number>
+		<provider name="O2" />
+		<maker location="USA">Apple</maker>
+	</phone>
+        <phone>
+            <number>1123</number>
+        </phone>
+</phones>
+
+

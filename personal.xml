@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<details	xmlns ="http://www.personal.com"
+			xmlns:xsi="http://www:w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://www.personal.com
+											personal.xsd">
+											
+<!-- Line 3 above - First, using a default namespace declaration, tell the schema-validator
+that all of the elements used in this "instance"/"actual xml" document comes from 
+the http://www.personal.com namespace -->
+
+<!-- Line 5 -(yes its line 5) --Second, with schemaLocation tell the schema-validator that the 
+http://www.personal.com namespace is defined by personal.xsd (note: schemaLocation contains 
+a pair of values)...-->
+
+<!-- Line 4 above -- Third, tell the schema-validator that the schemaLocation attribute we are using
+is the one in the XMLSchema-instance namespace-->
+
+									
+	<name>Joe Bloggs</name>
+	<age>10</age>
+	<dob>2000-01-22</dob>
+	<year>2000</year>
+	
+	<month>--01--</month>
+	
+	<!-- http.//www.java2s.com/Tutorial/XML/0060_XML-
+	Schema/ThegMonthdatatyperepresentsaGregorianmonththatrecurseveryyear.htm-->
+		
+	<day>---22</day>
+		
+	<!-- http.//www.java2s.com/Tutorial/XML/0060_XML-
+	Schema/ThegDaydatatyperepresentsadayofthemonththatrecurs.htm-->
+	
+	<time>10:12:03</time>
+	
+</details>
+

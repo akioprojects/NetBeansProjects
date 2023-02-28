@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/emptyDTD.dtd to edit this template
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ELEMENT __ROOT__ ANY>
+<!ATTLIST __ROOT__ version CDATA #REQUIRED>
+<!ELEMENT phones (phone)+>
+<!ELEMENT phone (number, provider, sold?, maker)>
+<!ELEMENT number (#PCDATA)>
+<!-- works also 
+<!ELEMENT provider (#PCDATA)> 
+<!ELEMENT sold (#PCDATA)>  -->
+<!ELEMENT provider EMPTY>
+<!ELEMENT sold EMPTY>
+<!ELEMENT maker (#PCDATA)>
+
+<!ATTLIST phone type (Pre-pay|Bill-pay) #REQUIRED>
+<!ATTLIST phone freeCallCredit (10|20|30) "10">
+<!ATTLIST phone currency CDATA #FIXED "Euro">
+<!ATTLIST provider name (Meteor|O2|Vodafone) #REQUIRED>
+<!ATTLIST sold profit (yes|no) #REQUIRED>
+<!ATTLIST maker location CDATA #REQUIRED>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+					 targetNamespace="http://www.personal.com"
+					 xmlns="http://www.personal.com"
+					 elementFormDefault="qualified">
+					 
+<!-- line 3 -- all XML schemas have "schema" as the root element (parent element)
+Line 3 -- starting at xmlns:xsd -- all elements and datatypes that are used to construct shemas--
+come from this url ... http://.......XML Schema  -->
+<!-- line 4 -- targetNamespace indicates that the elements defined by this schemas (name, age,
+dob, year, month, day, time) are to go in the http://www.personal.com  namespace-->
+<!-- Line 5 -- the default namespace is set to http://www.personal.com  which is the 
+set targetNamespace! -->
+<!-- line 6 above - This is a directive to any instance documents which conform to this schema:
+Any elements used by the instance document which were declared in this schema must be namespace qualified-->
+
+
+					 
+	<xsd:element name="details">
+		<xsd:complexType><!-- A complexType element is an XML element that contains other elements 
+							(ie: many children) and or Attributes  -->
+			<xsd:sequence><!--The sequence element provides an XML representation of 
+							an ordered set of element types..-->
+				<xsd:element name="name" type="xsd:string"/>
+				<xsd:element name="age" type="xsd:positiveInteger"/>
+				<xsd:element name="dob" type="xsd:date"/>
+				<xsd:element name="year" type="xsd:gYear"/>
+				<xsd:element name="month" type="xsd:gMonth"/>
+				<xsd:element name="day" type="xsd:gDay"/>
+				<xsd:element name="time" type="xsd:time"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
+
+	
+						
